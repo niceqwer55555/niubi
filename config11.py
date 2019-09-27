@@ -30,7 +30,7 @@
 # ############## Local Domain Settings ##############
 my_host_name = '127.0.0.1'
 my_host_scheme = 'http://'
-my_host_port = 8080  # None表示使用默认端口, 可以设置成非标准端口, 比如 81
+my_host_port = 8086  # None表示使用默认端口, 可以设置成非标准端口, 比如 81
 
 # ############## Target Domain Settings ##############
 target_domain = 'www.google.com.hk'

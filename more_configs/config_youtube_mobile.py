@@ -38,9 +38,9 @@
 # ######### 重要 重要 重要 重要 重要 #########
 
 # ############## Local Domain Settings ##############
-my_host_name = 'www.localhost.com'
+my_host_name = '127.0.0.1'
 my_host_scheme = 'http://'
-my_host_port = None  # None表示使用默认端口, 可以设置成非标准端口, 比如 81
+my_host_port = 8086  # None表示使用默认端口, 可以设置成非标准端口, 比如 81
 
 # ############## Target Domain Settings ##############
 target_domain = 'm.youtube.com'
@@ -106,8 +106,64 @@ external_domains = [
     'www.corp.google.com',
     'spreadsheets.google.com',
     'ytlegos-dashboard.corp.google.com',
-
     'youtu.be',
+    'payments.youtube.com',
+    'families.google.com',
+    'adssettings.google.com',
+    'tv.youtube.com',
+    'music.youtube.com',
+    'kids.youtube.com',
+    'creatoracademy.youtube.com',
+    'artists.youtube.com',
+    'myaccount.google.com',
+    'youtubei.youtube.com',
+    'oauthintegrations.googleapis.com',
+    'fonts.google.com',
+    'client-channel.google.com',
+    'type.googleapis.com',
+    'client-channel.sandbox.google.com',
+    'signaler-staging.sandbox.google.com',
+    'oauth-redirect.googleusercontent.com',
+    'oauth-redirect-sandbox.googleusercontent.com',
+    'oauth-redirect-test.googleusercontent.com',
+    'docs.google.com',
+    'www-onepick-opensocial.googleusercontent.com',
+    'consent.google.com',
+    'consent.youtube.com',
+    'autopush.consent.corp.youtube.com',
+    'dev.consent.corp.youtube.com',
+    'consent-daily-0.sandbox.google.com',
+    'consent-daily-1.sandbox.google.com',
+    'consent-daily-2.sandbox.google.com',
+    'consent-daily-3.sandbox.google.com',
+    'consent-daily-4.sandbox.google.com',
+    'consent-daily-5.sandbox.google.com',
+    'consent-daily-6.sandbox.google.com',
+    'consent-autopush.sandbox.google.com',
+    'daily-0.consent.corp.google.com',
+    'daily-1.consent.corp.google.com',
+    'daily-2.consent.corp.google.com',
+    'daily-3.consent.corp.google.com',
+    'daily-4.consent.corp.google.com',
+    'daily-5.consent.corp.google.com',
+    'daily-6.consent.corp.google.com',
+    'autopush.consent.corp.google.com',
+    'dev.consent.corp.google.com',
+    'signaler-pa.clients6.google.com',
+    'signaler-pa.googleapis.com',
+    'clients2.google.com',
+    'clients4.google.com',
+    'redirector.googlevideo.com',
+    'a1.googlevideo.com',
+    'play.google.com',
+    'web-green-qa.youtube.com',
+    'youtube.googleapis.com',
+    'admin.youtube.com',
+    'viacon.corp.google.com',
+    'developers.google.com',
+    'i9.ytimg.com',
+    'r8---sn-q4f7snss.googlevideo.com',
+
 ]
 
 force_https_domains = 'ALL'
@@ -145,5 +201,3 @@ shadow_url_redirect_regex = (
 )
 
 text_like_mime_keywords = ('text', 'json', 'javascript', 'xml', 'x-www-form-urlencoded')
-built_in_server_host = '0.0.0.0'
-built_in_server_debug = False
