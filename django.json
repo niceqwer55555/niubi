@@ -1,6 +1,6 @@
 {
-  "kind": "Template",
-  "apiVersion": "v1",
+  "kind": "DeploymentConfig",
+  "apiVersion": "apps.openshift.io/v1",
   "metadata": {
     "name": "django-example",
     "annotations": {
@@ -23,7 +23,7 @@
   "objects": [
     {
       "kind": "Secret",
-      "apiVersion": "v1",
+      "apiVersion": "apps.openshift.io/v1",
       "metadata": {
         "name": "${NAME}"
       },
@@ -33,7 +33,7 @@
     },
     {
       "kind": "Service",
-      "apiVersion": "v1",
+      "apiVersion": "apps.openshift.io/v1",
       "metadata": {
         "name": "${NAME}",
         "annotations": {

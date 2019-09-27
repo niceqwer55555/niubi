@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf-8
-if __name__ == '__main__':
-    from sys import path
-    from os.path import realpath, dirname
-    path.append(realpath(dirname(realpath(__file__)) + '/../'))
+
+
 import sys
 import os
 
