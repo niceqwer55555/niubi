@@ -145,3 +145,5 @@ shadow_url_redirect_regex = (
 )
 
 text_like_mime_keywords = ('text', 'json', 'javascript', 'xml', 'x-www-form-urlencoded')
+built_in_server_host = '0.0.0.0'
+built_in_server_debug = False
