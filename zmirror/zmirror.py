@@ -2546,13 +2546,13 @@ try:
         # 带来一个额外的引用计数
         # 所以在 unittest 中, 每次重载 zmirror 的时候, 都需要重载一次 custom_func
         importlib.reload(importlib.import_module("custom_func"))
-    from custom_func import *
+    from custom_func11 import *
 except:  # coverage: exclude
     pass
 
 if custom_text_rewriter_enable:
     try:
-        from custom_func import custom_response_text_rewriter
+        from custom_func11 import custom_response_text_rewriter
     except:  # coverage: exclude
         warnprint('Cannot import custom_response_text_rewriter custom_func.py,'
                   ' `custom_text_rewriter` is now disabled(if it was enabled)')
@@ -2560,7 +2560,7 @@ if custom_text_rewriter_enable:
 
 if identity_verify_required:
     try:
-        from custom_func import custom_identity_verify
+        from custom_func11 import custom_identity_verify
     except:  # coverage: exclude
         identity_verify_required = False
         warnprint('Cannot import custom_identity_verify from custom_func.py,'
@@ -2569,7 +2569,7 @@ if identity_verify_required:
 
 if enable_custom_access_cookie_generate_and_verify:
     try:
-        from custom_func import custom_generate_access_cookie, custom_verify_access_cookie
+        from custom_func11 import custom_generate_access_cookie, custom_verify_access_cookie
     except:  # coverage: exclude
         enable_custom_access_cookie_generate_and_verify = False
         errprint('Cannot import custom_generate_access_cookie and custom_generate_access_cookie from custom_func.py,'
