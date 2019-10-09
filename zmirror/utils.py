@@ -21,7 +21,7 @@ except:
 from . import CONSTS
 
 from config_default import *
-from config import *
+from config11 import *
 
 
 def zmirror_root(filename):

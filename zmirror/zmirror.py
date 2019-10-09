@@ -75,7 +75,7 @@ except:  # coverage: exclude
     raise  # v0.23.1+ 当 config_default.py 不存在时, 程序会终止运行
 
 try:  # 加载用户自定义配置文件, 覆盖掉默认配置的同名项
-    from config import *
+    from config11 import *
 except:  # coverage: exclude
     errprint(
         'the config_default.py is missing, fallback to default configs(if we can), '
